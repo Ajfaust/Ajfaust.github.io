@@ -1,0 +1,83 @@
+% Andrew Faust's Resume
+% URL: 
+%
+% Based on resume tex file by Kamil Wojcicki
+% URL: http://linux.dsplabs.com.au/resume-writing-example-latex-template-linux-curriculum-vitae-professional-cv-layout-format-text-p54/
+
+\documentclass[margin,line,11pt]{resume}
+
+\usepackage{graphicx}
+
+\begin{document}
+
+\name{\Huge Andrew Faust}
+{
+	\sc
+    \hfill (310) 465-7170                  \vspace{0mm}\\\vspace{0mm}%
+    \hfill andrewjfaust@gmail.com           \vspace{0mm}\\\vspace{0mm}%
+    \hfill 1710 Hillcrest Dr. Apt 175,\vspace{0mm}\\\vspace{0mm}
+    \hfill Newbury Park CA 91320\vspace{0mm}\\\vspace{-10mm}%
+}
+
+\begin{resume}
+
+\vspace{1mm}
+
+    %__________________________________________________________________________________________________________________
+    % Computer Skills
+    \section{\mysidestyle \textbf{\large{S}\small{KILLS}}}
+
+    \textbf{Languages:}\hspace{2mm}C\#,\hspace{2mm}SQL,\hspace{2mm}Python,\hspace{2mm}Html/CSS/JavaScript,\hspace{2mm}C++,\hspace{2mm}C\\
+    \textbf{Technologies:}\hspace{2mm}.NET \{Core\},\hspace{2mm}ASP.NET \{Core\},\hspace{2mm}Git,\hspace{2mm}Azure,\hspace{2mm}CI/CD, Docker\textsl{(learning)}\\
+    \textbf{Environments:}\hspace{2mm}Visual Studio,\hspace{1mm} Visual Studio Code,\hspace{2mm}Microsoft SSMS,\hspace{2mm}Microsoft Power BI.
+\sectionline
+
+    %__________________________________________________________________________________________________________________
+    % Professional Experience
+    \section{\mysidestyle \textbf{\large{P}\small{ROFESSIONAL\\EXPERIENCE}}}
+
+    % Zoox Engineering Manager
+    \textbf{\listing ZPower LLC}, Camarillo, CA \vspace{2mm}\\\vspace{1mm}
+    \textsl{Software Engineer} \hfill \textbf{Jan 2018 -- Present}\\
+    \begin{list2}
+        \item Redesigned and developed multiple desktop applications in C\#/.NET used in critical parts of the battery manufacturing process.
+        \item Implemented CI/CD pipelines using Azure DevOps to help increase build and deployment efficiency.
+        \item Produced key performance BI reports, allowing multiple departments to review and assess crucial production data.
+        \item Developed internal web pages using ASP.NET \{Core\} for employees to visualize production data and create records.
+        \item Maintained multiple applications, services, and databases used in the manufacturing process.
+    \end{list2}
+
+    \textbf{\listing Bunim/Murray Productions}, Glendale, CA \vspace{2mm}\\\vspace{1mm}
+    \textsl{Contract Software Developer} \hfill \textbf{Sep 2017 -- Nov 2017}\\
+    \begin{list2}
+        \item Utilized REST and SOAP APIs to create scripts to transfer employee data from UltiPro HCM to on-premise storage. Increased efficiency for HR by allowing for automated form completion.
+        \item Recreated a call log application used by the CEO by creating a similar UI using FileMaker Pro and backfilling data from an old Microsoft SQL database into an on-premise databse.
+    \end{list2}
+    
+
+\sectionline
+
+    \section{\mysidestyle \textbf{\large{P}\small{ROJECTS}}}
+    \textbf{\listing Thread Library} \hfill \textbf{May 2017}\\
+    \begin{list2}
+        \item Created a user-level thread library in C that allows users to create and manage multiple threads. Implements thread preemption, semaphore locks, and thread private storage. A linked-list queue library was also created to keep track of running threads.
+    \end{list2}
+
+    \textbf{\listing IEEE 802.11-Based WLAN Simulation} \hfill \textbf{March 2017}\\
+    \begin{list2}
+        \item Developed a time-based Discrete Event Simulation of an ad-hoc WLAN network in Python between 20 hosts, using an exponential backoff scheme.
+        \item Successfully implemented a doubly-linked-list with linear sorting to act as a global event list, and a singly-linked-list queue to act as each host's buffer.
+    \end{list2}
+
+\sectionline
+
+    %__________________________________________________________________________________________________________________
+    % Education
+    \section{\mysidestyle \textbf{\large{E}\small{DUCATION}}}
+
+    \textbf{\listing University of California, Davis}, Davis, California \vspace{2mm}\\\vspace{1mm}%
+    \textsl{B.S of Computer Science} \hfill \textbf{ Sep 2015 -- June 2017}\vspace{-3mm}\\\vspace{-1mm}%
+
+
+\end{resume}
+\end{document}
