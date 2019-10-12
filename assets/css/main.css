@@ -1785,7 +1785,7 @@ input, select, textarea {
 	}
 
 	header.major h2 {
-		color: #1b3246;
+		color: #2a4e6d;
 		font-size: 3.5em;
 	}
 
@@ -2845,7 +2845,8 @@ input, select, textarea {
 		border-top: 0;
 		color: #c0c0c0;
 		overflow: hidden;
-		padding: 4em 0 2em 0;
+		height: 2.5em;
+		padding-top: 0.5em;
 		margin-left: 18em;
 	}
 
@@ -2900,7 +2901,7 @@ input, select, textarea {
 		/* Wrapper */
 
 			#wrapper {
-				padding-right: 21em;
+				padding-left: 3em;
 			}
 
 		/* Main */
@@ -2930,7 +2931,7 @@ input, select, textarea {
 		/* Wrapper */
 
 			#wrapper {
-				padding-right: 20em;
+				padding-left: 2em;
 			}
 
 	}
@@ -2985,11 +2986,11 @@ input, select, textarea {
 				top: 0;
 				width: 23em;
 				z-index: 10002;
-				-moz-transform: translateX(23em);
-				-webkit-transform: translateX(23em);
-				-ms-transform: translateX(23em);
-				transform: translateX(23em);
-				right: 0;
+				-moz-transform: translateX(-23em);
+				-webkit-transform: translateX(-23em);
+				-ms-transform: translateX(-23em);
+				transform: translateX(-23em);
+				left: 0;
 			}
 
 				#header > footer {
@@ -3012,7 +3013,13 @@ input, select, textarea {
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
-				padding: 44px 0 1px 0;
+				padding: 44px 0px 0px 0px;
+			}
+
+		/* Main */
+
+			#main > section {
+				margin-left: 0;
 			}
 
 		/* Header Panel */
@@ -3046,7 +3053,7 @@ input, select, textarea {
 					line-height: 44px;
 					padding: 0 1em;
 					width: 100%;
-					text-align: left;
+					text-align: right;
 				}
 
 					#titleBar .title a {
@@ -3059,10 +3066,10 @@ input, select, textarea {
 					height: 4em;
 					position: absolute;
 					top: 0;
-					width: 6em;
+					width: 4em;
 					border: 0;
 					outline: 0;
-					right: 0;
+					left: 0;
 				}
 
 					#titleBar .toggle:before {
@@ -3093,19 +3100,24 @@ input, select, textarea {
 						right: 0;
 					}
 
-			body.header-visible #wrapper, body.header-visible #titleBar {
-				-moz-transform: translateX(-23em);
-				-webkit-transform: translateX(-23em);
-				-ms-transform: translateX(-23em);
-				transform: translateX(-23em);
-			}
-
-			body.header-visible #header {
-				-moz-transform: translateX(0);
-				-webkit-transform: translateX(0);
-				-ms-transform: translateX(0);
-				transform: translateX(0);
-			}
+					body.header-visible #wrapper, body.header-visible #titleBar {
+						-moz-transform: translateX(23em);
+						-webkit-transform: translateX(23em);
+						-ms-transform: translateX(23em);
+						transform: translateX(23em);
+					}
+					
+					body.header-visible #header {
+						-moz-transform: translateX(0);
+						-webkit-transform: translateX(0);
+						-ms-transform: translateX(0);
+						transform: translateX(0);
+					}
+					
+			/* Footer */
+				#footer {
+					margin-left: 0
+				}
 
 	}
 
@@ -3181,11 +3193,11 @@ input, select, textarea {
 
 			#header {
 				width: 17em;
-				-moz-transform: translateX(17em);
-				-webkit-transform: translateX(17em);
-				-ms-transform: translateX(17em);
-				transform: translateX(17em);
-				right: 0;
+				-moz-transform: translateX(-17em);
+				-webkit-transform: translateX(-17em);
+				-ms-transform: translateX(-17em);
+				transform: translateX(-17em);
+				left: 0;
 			}
 
 				#header > header {
@@ -3237,7 +3249,7 @@ input, select, textarea {
 
 			#titleBar .toggle {
 				height: 4em;
-				width: 6em;
+				width: 2.75em;
 			}
 
 				#titleBar .toggle:before {
@@ -3246,10 +3258,10 @@ input, select, textarea {
 				}
 
 			body.header-visible #wrapper, body.header-visible #titleBar {
-				-moz-transform: translateX(-17em);
-				-webkit-transform: translateX(-17em);
-				-ms-transform: translateX(-17em);
-				transform: translateX(-17em);
+				-moz-transform: translateX(17em);
+				-webkit-transform: translateX(17em);
+				-ms-transform: translateX(17em);
+				transform: translateX(17em);
 			}
 
 	}
